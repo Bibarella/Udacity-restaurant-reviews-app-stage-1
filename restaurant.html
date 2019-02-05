@@ -12,9 +12,9 @@
 
 <body class="inside">
   <!-- Beginning header -->
-  <header>
+  <header tabindex="1">
     <!-- Beginning nav -->
-    <nav>
+    <nav aria-label="Breadcrumb" role="navigation">
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
@@ -27,10 +27,10 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main id="maincontent">
+  <main tabindex="2" id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" role="application"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
