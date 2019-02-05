@@ -273,3 +273,53 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+#restaurants-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: felx;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.filter-options {
+	height: auto;
+}
+
+.filter-options select {
+	width: auto;
+}
+
+.inside {
+	overflow-x: hidden;
+}
+
+.inside #footer {
+	width: 100%;
+}
+
+@media screen and (max-width: 1021px) {
+  #breadcrumb {
+    width: 100%;
+  }
+  
+   #maincontent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .new-container {
+    margin-bottom: 80px;
+  }
+  .inside #map-container {
+    position: static;
+    height: 60vh;
+    width: 100vw;
+  }
+  #restaurant-container, #reviews-container {
+    padding: 20px;
+    width: calc(100vw - 40px);
+    }
+  #reviews-list li{
+    width: auto;
+  }
+}
