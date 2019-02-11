@@ -51,7 +51,7 @@ self.addEventListener('fetch', function(event) {
           cache.put(event.request, response.clone());
           return response;
         });
-      }).catch(function (err) {
+      }).catch(function(err) {
         throw err;
       });
     })
