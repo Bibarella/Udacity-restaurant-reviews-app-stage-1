@@ -1,5 +1,5 @@
 let staticCacheName = 'restaurant-cache';
-let urlsToCache = [
+let filesToCache = [
   './',
   './index.html',
   './restaurant.html',
@@ -25,7 +25,7 @@ let urlsToCache = [
 self.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches.open(staticCacheName).then(function(cache) {
-			return cache.addAll(urlsToCache);
+			return cache.addAll(filesToCache);
         })
     );
 });
